@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WARD13</title>
+  <link rel="stylesheet" href="game.css">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="game-container">
+  <canvas id="gameCanvas" width="1760" height="990"></canvas>
+  <div id="inventory-hotbar">
+    <div class="inventory-slot" data-slot="0">
+      <span id="slot-number1">1</span>
+      <img id="slot-image1" src="/Ward/Key.png" style="width: 80%; height: 80%; object-fit: contain;">
+    </div>
+    <div class="inventory-slot" data-slot="1">
+      <span class="slot-number">2</span>
+      <img class="slot-image" src="" style="display: none; width: 80%; height: 80%; object-fit: contain;">
+    </div>
+    <div class="inventory-slot" data-slot="2">
+      <span class="slot-number">3</span>
+      <img class="slot-image" src="" style="display: none; width: 80%; height: 80%; object-fit: contain;">
+      </div>
+      <div class="inventory-slot" data-slot="3">
+        <span class="slot-number">4</span>
+        <img class="slot-image" src="" style="display: none; width: 80%; height: 80%; object-fit: contain;">
+      </div>
+      <div class="inventory-slot" data-slot="4">
+        <span class="slot-number">5</span>
+        <img class="slot-image" src="" style="display: none; width: 80%; height: 80%; object-fit: contain;">
+      </div>
+    </div>
+    </div>
+
+  <div id="Dialog_box">The door is locked.</div>    
+  <div id="Dialog_box_Bed">You cannot sleep at the moment</div>
+  <div id="Dialog_box_Bin">You found a key!</div>
+  </div>
+</div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>

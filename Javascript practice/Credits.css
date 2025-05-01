@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.credits {
+    margin-left: 50px;
+    position: absolute;
+    color: white;
+    text-align: left;
+    top: 100%;
+    animation: scroll-credits 20s linear 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes scroll-credits {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -120%;
+    }
+}
+
+.credits h1 {
+    font-size: 3em;
+    font-family: 'Joystix Monospace';
+}
+
+.credits span {
+    color: rgb(139, 34, 34);
+}
+
+#BacktoMainMenu {
+    position: relative; /* Position relative to .credits-container */
+    bottom: 20px;
+
+    padding: 20px 30px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-family: 'Joystix Monospace';
+    
+}
+
+.back-to-menu-fixed {
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it's above everything */
+}
+
+@font-face {
+    font-family: 'Joystix Monospace';
+    src: url('/joystix/joystix\ monospace.woff2') format('woff2');
+}

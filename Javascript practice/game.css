@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+#game-container {
+    position: relative;
+    width: 200vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-color: black;
+}
+
+#gameCanvas {
+    display: block;
+    width: 158%;
+    height: auto;
+    background-color: black;
+}
+
+#inventory-hotbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.inventory-slot {
+    width: 40px; /* Adjust slot width */
+    height: 40px; /* Adjust slot height */
+    background-color: rgba(0, 0, 0, 0.195);
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    font-family: 'Joystix Monospace';
+  }
+
+  .inventory-slot.equipped {
+    border: 3px solid brown;
+  }
+
+
+  #Dialog_box {
+    position: absolute;
+    top: 250px; /* Adjust as needed */
+    right: 20px;    /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 0.8em;
+    text-align: left;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    width: 80%;
+    max-width: 220px;
+    font-family: 'Joystix Monospace';
+  }
+
+#Dialog_box_Bed {
+    position: absolute;
+    top: 250px; /* Adjust as needed */
+    right: 20px;    /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 0.8em;
+    text-align: left;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    width: 80%;
+    max-width: 220px;
+    font-family: 'Joystix Monospace';
+}
+
+#Dialog_box_Bin {
+    position: absolute;
+    top: 250px; /* Adjust as needed */
+    right: 20px;    /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 0.8em;
+    text-align: left;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    width: 80%;
+    max-width: 220px;
+    font-family: 'Joystix Monospace';
+}
+
+#IdleAnimation {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    z-index: 15;
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+
+#slot-number1 {
+    display: content;
+}
+    
+
+#slot-image1 {
+display: none;
+}
+
+@font-face {
+    font-family: 'Joystix Monospace';
+    src: url('/joystix/joystix\ monospace.woff2') format('woff2');
+}
